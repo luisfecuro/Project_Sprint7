@@ -97,5 +97,6 @@ with col2:
     fig_3 = px.histogram(df_time,
                          x='model_year',
                          y='price',
+                         histfunc='avg'
                          )
     st.plotly_chart(fig_3)
